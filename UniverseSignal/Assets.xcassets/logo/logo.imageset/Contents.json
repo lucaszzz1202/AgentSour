@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "特工logo.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

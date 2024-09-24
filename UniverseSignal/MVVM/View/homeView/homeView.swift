@@ -9,7 +9,7 @@ import SwiftUI
 
 struct homeView: View {
     @State private var isPressing = false
-    @State var showAskSour : Bool = false
+    @State var showAskSour : Bool = true
     var banners = [
         banner( bannerImg: "banner1", bannerUrl: "null"),
         banner( bannerImg: "banner2", bannerUrl: "null"),

@@ -6,27 +6,52 @@
 //
 
 import SwiftUI
+import Foundation
+
 
 struct AskSour: View {
-    @FocusState private var isTextFieldFocused : Bool 
+    @StateObject var viewModel = ChatViewModel()
+    @FocusState private var isTextFieldFocused : Bool
+    
     var body: some View {
             VStack(alignment: .center ){
                 RoundedRectangle(cornerRadius: 8)
                     .frame(width: 80,height: 4)
                     .opacity(0.4)
                     .padding(16)
-                Text("问问 Sour")
-                    .font(.system(size: 14))
-                Spacer()
+                HStack{
+                    Image("搜索_search")
+                    Text("问问 Sour")
+                        .font(.system(size: 14))
+                }
+
+                ScrollView {
+                    VStack(spacing: 10) {
+                        if let lastMessage = viewModel.lastSentMessage {
+                            MessageBub(message: Message(content: lastMessage))
+                        }
+                        if !viewModel.currentResponse.isEmpty {
+                            pop(text: viewModel.currentResponse)
+                                .transition(.opacity)
+                                .animation(.default, value: viewModel.currentResponse)
+                        }
+                    }
+                    .padding(20)
+                }
                 HStack(alignment: .center){
-                    TextField("我想知道...",text: .constant(""))
+                    TextField("我想知道...",text: $viewModel.currentMessage)
                         .focused($isTextFieldFocused)
                     Spacer()
-                    Image("logo")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 32,height: 32)
-                        .clipShape(Circle())
+                    Button(action:{
+                        viewModel.sendMessage()
+                    } ){
+                        Image("logo")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 32,height: 32)
+                            .clipShape(Circle())
+                    }
+                    .disabled(viewModel.currentMessage.isEmpty) // 当 textInput 为空时禁用按钮
                 }
                 .padding(16)
                 .background(.white)

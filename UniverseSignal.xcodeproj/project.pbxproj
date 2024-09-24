@@ -11,6 +11,13 @@
 		926A11962C7E25A3009F24D9 /* backBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926A11952C7E25A3009F24D9 /* backBlur.swift */; };
 		926A11992C7F8395009F24D9 /* textInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926A11982C7F8395009F24D9 /* textInfo.swift */; };
 		926A119B2C7F8BB6009F24D9 /* highLightText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926A119A2C7F8BB6009F24D9 /* highLightText.swift */; };
+		926A119D2C7F9878009F24D9 /* searchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926A119C2C7F9878009F24D9 /* searchViewModel.swift */; };
+		926A119F2C80BC0D009F24D9 /* DeepSeekAPIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926A119E2C80BC0D009F24D9 /* DeepSeekAPIKey.swift */; };
+		926A11A12C9073C4009F24D9 /* deepseekAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926A11A02C9073C4009F24D9 /* deepseekAPI.swift */; };
+		926A11A32C90743C009F24D9 /* chatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926A11A22C90743B009F24D9 /* chatViewModel.swift */; };
+		926A11A52C907CF3009F24D9 /* pop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926A11A42C907CF3009F24D9 /* pop.swift */; };
+		926A11A72C907E29009F24D9 /* MessageBub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926A11A62C907E29009F24D9 /* MessageBub.swift */; };
+		926A11A92CA334B0009F24D9 /* parseMarkdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926A11A82CA334B0009F24D9 /* parseMarkdown.swift */; };
 		92EA5E9F2C76595500CAB200 /* UniverseSignalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EA5E9E2C76595500CAB200 /* UniverseSignalApp.swift */; };
 		92EA5EA12C76595500CAB200 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EA5EA02C76595500CAB200 /* ContentView.swift */; };
 		92EA5EA32C76595500CAB200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92EA5EA22C76595500CAB200 /* Assets.xcassets */; };
@@ -52,6 +59,13 @@
 		926A11952C7E25A3009F24D9 /* backBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backBlur.swift; sourceTree = "<group>"; };
 		926A11982C7F8395009F24D9 /* textInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textInfo.swift; sourceTree = "<group>"; };
 		926A119A2C7F8BB6009F24D9 /* highLightText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = highLightText.swift; sourceTree = "<group>"; };
+		926A119C2C7F9878009F24D9 /* searchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchViewModel.swift; sourceTree = "<group>"; };
+		926A119E2C80BC0D009F24D9 /* DeepSeekAPIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSeekAPIKey.swift; sourceTree = "<group>"; };
+		926A11A02C9073C4009F24D9 /* deepseekAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deepseekAPI.swift; sourceTree = "<group>"; };
+		926A11A22C90743B009F24D9 /* chatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatViewModel.swift; sourceTree = "<group>"; };
+		926A11A42C907CF3009F24D9 /* pop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pop.swift; sourceTree = "<group>"; };
+		926A11A62C907E29009F24D9 /* MessageBub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBub.swift; sourceTree = "<group>"; };
+		926A11A82CA334B0009F24D9 /* parseMarkdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parseMarkdown.swift; sourceTree = "<group>"; };
 		92EA5E9B2C76595500CAB200 /* UniverseSignal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniverseSignal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92EA5E9E2C76595500CAB200 /* UniverseSignalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniverseSignalApp.swift; sourceTree = "<group>"; };
 		92EA5EA02C76595500CAB200 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -220,6 +234,9 @@
 			children = (
 				92EDA2712C7B443600A5F8D1 /* banner.swift */,
 				926A11982C7F8395009F24D9 /* textInfo.swift */,
+				926A119E2C80BC0D009F24D9 /* DeepSeekAPIKey.swift */,
+				926A11A02C9073C4009F24D9 /* deepseekAPI.swift */,
+				926A11A82CA334B0009F24D9 /* parseMarkdown.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -242,7 +259,9 @@
 			isa = PBXGroup;
 			children = (
 				92EDA2522C77957D00A5F8D1 /* loginManager.swift */,
+				926A119C2C7F9878009F24D9 /* searchViewModel.swift */,
 				92EDA25A2C77998C00A5F8D1 /* mainViewModel.swift */,
+				926A11A22C90743B009F24D9 /* chatViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -265,6 +284,8 @@
 			children = (
 				92EDA2432C778A6C00A5F8D1 /* homeView.swift */,
 				926A11932C7E2339009F24D9 /* AskSour.swift */,
+				926A11A42C907CF3009F24D9 /* pop.swift */,
+				926A11A62C907E29009F24D9 /* MessageBub.swift */,
 				926A11972C7E36E2009F24D9 /* banner */,
 				92EDA2672C78DBED00A5F8D1 /* textCard.swift */,
 				92EDA2462C778ADB00A5F8D1 /* detailPage.swift */,
@@ -414,6 +435,7 @@
 				92EDA2702C7B434600A5F8D1 /* pageableBannerView.swift in Sources */,
 				92EA5EA12C76595500CAB200 /* ContentView.swift in Sources */,
 				92EDA2612C779DF800A5F8D1 /* meView.swift in Sources */,
+				926A11A92CA334B0009F24D9 /* parseMarkdown.swift in Sources */,
 				92EDA2532C77957D00A5F8D1 /* loginManager.swift in Sources */,
 				92EDA26C2C79E89500A5F8D1 /* test.swift in Sources */,
 				92EDA23C2C765B4B00A5F8D1 /* NetworkLoggerPlugin.swift in Sources */,
@@ -423,6 +445,7 @@
 				92EA5E9F2C76595500CAB200 /* UniverseSignalApp.swift in Sources */,
 				92EDA2572C7798FA00A5F8D1 /* mainView.swift in Sources */,
 				92EDA23B2C765B4B00A5F8D1 /* Response+Extension.swift in Sources */,
+				926A11A52C907CF3009F24D9 /* pop.swift in Sources */,
 				92EDA2682C78DBED00A5F8D1 /* textCard.swift in Sources */,
 				92EDA2392C765B4B00A5F8D1 /* MoyaProviderType+Extension.swift in Sources */,
 				92EDA2442C778A6C00A5F8D1 /* homeView.swift in Sources */,
@@ -430,7 +453,10 @@
 				92EDA25D2C779DC300A5F8D1 /* hrView.swift in Sources */,
 				92EDA26A2C79E43E00A5F8D1 /* adCard.swift in Sources */,
 				92EDA2382C765B4B00A5F8D1 /* NetWorking.swift in Sources */,
+				926A11A72C907E29009F24D9 /* MessageBub.swift in Sources */,
+				926A11A12C9073C4009F24D9 /* deepseekAPI.swift in Sources */,
 				92EDA2372C765B4B00A5F8D1 /* ApiConfig.swift in Sources */,
+				926A119F2C80BC0D009F24D9 /* DeepSeekAPIKey.swift in Sources */,
 				92EDA25F2C779DE600A5F8D1 /* chatView.swift in Sources */,
 				92EDA24F2C7793F500A5F8D1 /* mainButton.swift in Sources */,
 				92EDA2662C77B16E00A5F8D1 /* homeCard.swift in Sources */,
@@ -440,7 +466,9 @@
 				926A11992C7F8395009F24D9 /* textInfo.swift in Sources */,
 				92EDA23D2C765B4B00A5F8D1 /* TokenPlugin.swift in Sources */,
 				926A11942C7E2339009F24D9 /* AskSour.swift in Sources */,
+				926A119D2C7F9878009F24D9 /* searchViewModel.swift in Sources */,
 				92EDA25B2C77998C00A5F8D1 /* mainViewModel.swift in Sources */,
+				926A11A32C90743C009F24D9 /* chatViewModel.swift in Sources */,
 				92EDA2472C778ADB00A5F8D1 /* detailPage.swift in Sources */,
 				92EDA2362C765B4B00A5F8D1 /* SearchAPI.swift in Sources */,
 			);
